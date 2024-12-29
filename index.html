@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown 页面</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>彩票流从原理到入门</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
-        code { font-family: monospace; }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
     </style>
 </head>
 <body>
-    <div id="content"></div>
-    <script>
-        fetch('README.md')
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById('content').innerHTML = marked.parse(text);
-            });
-    </script>
+    <iframe src="彩票流从原理到入门.html"></iframe>
 </body>
 </html>
